@@ -10,28 +10,62 @@
     <title>No Ping Game</title>
 </head>
 <body>
+    <!-- 1280px vou usar media queries -->
     
     <a class="shortcutToMain" href="#main">skip to the main</a>
 
-    <header>
-        <div class="logo">
+    <header class="header">
+        <div class="header__logo">
             <i class="fas fa-wifi"></i>
         </div><!--logo-->
 
         <nav class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Suport</a></li>
+                <li><a class="menu__items" href="#">Home</a></li>
+                <li><a class="menu__items" href="#">About</a></li>
+                <li><a class="menu__items" href="#">Services</a></li>
+                <li><a class="menu__items" href="#">Contact</a></li>
+                <li><a class="menu__items" href="#">Suport</a></li>
                 <li><a href="#" class="menu__btn_loginRegister">Login</a></li>
                 <li><a href="#" class="menu__btn_loginRegister">Register</a></li>
             </ul>
         </nav><!--menu-->
-    </header>
+    </header><!--header-->
 
-    <main id="main"></main>
+    <main id="main">
+
+        <section class="about">
+            <div class="about__content">
+                <h1>Low Ping Game</h1>
+                <p>
+                    Software prepared for remove your problems with the connection when you’re gaming.
+                </p>
+            </div><!--content-->
+            <img class="about__svgGame" src="./assets/svg/undraw_video_game_night_8h8m.svg" alt="Two people who love Games and are holding a controller and a headset" />
+        </section><!--about-->
+
+        <section class="qualities">
+            <div class="qualities__content">
+                <h2>High performance</h2>
+                <p>
+                    Our software doesn't require much of your computer's hardware with high performance, security and low ping!
+                </p>
+            </div><!--content-->
+            <img class="spendGame" src="./assets/img/hardPlayGame.jpg" alt="Two people spending time playing Games with a high connection" /><!--boyGaming-->
+        </section><!--qualities-->
+
+        <section class="download">
+            <img class="boyGaming" src="./assets/img/boyGaming.jpg" alt="A boy playng video Game. Illustration" /><!--download-->
+            <div class="download__content">
+                <h2>Check Low Ping Game!</h2>
+                <p>
+                    Download it, clicking the button:
+                </p>
+                <button>Download</button>
+            </div><!--content-->
+        </section><!--download-->
+
+    </main>
 
     <footer></footer>
 
