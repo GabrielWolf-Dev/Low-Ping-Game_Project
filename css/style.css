@@ -291,3 +291,75 @@ header .menu ul li {
     margin-top: 32px;
     transition: all ease 0.5s;
 }
+
+.footer {
+    width: 100%;
+    padding: 20px 2%;
+    background-color: #333333;
+    color: white;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__developer {
+    padding: 16px 0;
+}
+
+.contact__developer h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-right: 16px;
+    display: inline;
+}
+
+.contact__developer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.footer__contact h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.contact__iconSocialMedia, .credits__authors {
+    list-style: none;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.contact__iconSocialMedia li {
+    display: inline-block;
+    margin: 0 24px -4px 0;
+}
+
+.contact__iconSocialMedia a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.footer__credits {
+    text-align: right;
+}
+
+.footer__credits h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.credits__authors li {
+    margin-top: 16px;
+}
+
+.credits__authors a {
+    color: white;
+}
