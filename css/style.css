@@ -27,7 +27,21 @@ html, body {
     text-indent: 100%;
 }
 
-.menu__btn_loginRegister:hover,
+.bgBlack {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all ease 0.5s;
+    opacity: 0;
+}
+
+.bgBlack--active {
+    opacity: 1;
+    width: 100%;
+}
+
+.menuDesktop__btnLogReg:hover,
 .download__content button:hover,
 .services__classic button:hover,
 .services__premium button:hover,
@@ -36,6 +50,22 @@ html, body {
     background-color: white;
     color: #694CB7;
     border: 2px solid #333333;
+}
+
+.btnLoginRegister {
+    display: none;
+    padding: 10px 2%;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+.btnLoginRegister ul {
+    list-style: none;
+}
+
+.btnLoginRegister ul li {
+    margin: 48px 0;
 }
 
 .header {
@@ -53,27 +83,31 @@ html, body {
     color: #0067F1;
 }
 
-.menu ul{
+.header__menuMobile {
+    display: none;
+}
+
+.header__menuDesktop ul{
     list-style-type: none;
 }
 
-header .menu ul li {
+header .header__menuDesktop ul li {
     display: inline-block;
     margin: 0 20px -4px 0;
 }
 
-.menu__items {
+.menuDesktop__items {
     color: #333333;
     text-decoration: none;
     transition: all ease 0.3s;
     font-size: 1.25rem;
 }
 
-.menu__items:hover {
+.menuDesktop__items:hover {
     opacity: 0.5;
 }
 
-.menu__btn_loginRegister {
+.menuDesktop__btnLogReg {
     padding: 10px 40px;
     background-color: #0067F1;
     color: white;
@@ -362,4 +396,94 @@ header .menu ul li {
 
 .credits__authors a {
     color: white;
+}
+
+/*-- Design Responsive --*/
+
+@media screen and (max-width: 1280px) {
+
+.header__logo {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #0067F1;
+}
+
+.header__menuDesktop {
+    display: none;
+}
+
+.header__menuMobile {
+    display: block;
+}
+
+.menuMobile__btnBar {
+    font-size: 2.5rem;
+    background-color: white;
+    color: #0067F1;
+    border: 0;
+    cursor: pointer;
+}
+
+.btnLoginRegister {
+    display: block;
+}
+
+.menuMobile__menu {
+    list-style: none;
+    background-color: white;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 3px 3px 10px black;
+    transform: translateX(110%);
+    -webkit-transform: translateX(110%);
+    -moz-transform: translateX(110%);
+    -ms-transform: translateX(110%);
+    -o-transform: translateX(110%);
+    transition: transform ease 0.5s;
+}
+
+.menu__items {
+    width: 100%;
+    background-color: #DDDDDD;
+    padding: 20px 6%;
+    border-bottom: 2px solid #333333;
+}
+
+.menu__items:last-child {
+    border-bottom: none;
+}
+
+.menu__items a {
+    color: #333333;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.menu__btnClose {
+    width: 100%;
+    padding: 20px 6%;
+    background-color: #333333;
+    color: white;
+    font-size: 2.5rem;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.menuMobile__menu--active {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+
+.main--active {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all ease 0.5s;
+}
+
 }

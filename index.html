@@ -14,22 +14,46 @@
     
     <a class="shortcutToMain" href="#main">skip to the main</a>
 
+    <div class="bgBlack"></div><!--bgBlack-->
+
+    <div class="btnLoginRegister">
+        <ul>
+            <li><a href="#" class="menuDesktop__btnLogReg">Login</a></li>
+            <li><a href="#" class="menuDesktop__btnLogReg">Register</a></li>
+        </ul>
+    </div><!--btnLoginRegister-->
+
     <header class="header">
         <div class="header__logo">
             <i class="fas fa-wifi"></i>
         </div><!--logo-->
 
-        <nav class="menu">
+        <nav class="header__menuDesktop">
             <ul>
-                <li><a class="menu__items" href="#">Home</a></li>
-                <li><a class="menu__items" href="#">About</a></li>
-                <li><a class="menu__items" href="#">Services</a></li>
-                <li><a class="menu__items" href="#">Contact</a></li>
-                <li><a class="menu__items" href="#">Suport</a></li>
-                <li><a href="#" class="menu__btn_loginRegister">Login</a></li>
-                <li><a href="#" class="menu__btn_loginRegister">Register</a></li>
+                <li><a class="menuDesktop__items" href="#">Home</a></li>
+                <li><a class="menuDesktop__items" href="#">About</a></li>
+                <li><a class="menuDesktop__items" href="#">Services</a></li>
+                <li><a class="menuDesktop__items" href="#">Contact</a></li>
+                <li><a class="menuDesktop__items" href="#">Suport</a></li>
+                <li><a href="#" class="menuDesktop__btnLogReg">Login</a></li>
+                <li><a href="#" class="menuDesktop__btnLogReg">Register</a></li>
             </ul>
-        </nav><!--menu-->
+        </nav><!--header__menuDesktop-->
+
+        <nav class="header__menuMobile">
+            <button class="menuMobile__btnBar"><i class="fas fa-bars"></i></button>
+
+            <ul class="menuMobile__menu">
+                <button class="menu__btnClose"><i class="fas fa-times"></i></button>
+
+                <li class="menu__items"><a href="#">Home</a></li>
+                <li class="menu__items"><a href="#">About</a></li>
+                <li class="menu__items"><a href="#">Services</a></li>
+                <li class="menu__items"><a href="#">Contact</a></li>
+                <li class="menu__items"><a href="#">Suport</a></li>
+            </ul>
+        </nav><!--header__menuMobile-->
+
     </header><!--header-->
 
     <main id="main">
@@ -215,5 +239,6 @@
     </footer><!--footer-->
 
     <script src="./js/all.js"></script>
+    <script src="./js/menuMobile.js"></script>
 </body>
 </html>
