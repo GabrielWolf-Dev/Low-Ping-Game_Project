@@ -27,6 +27,17 @@ html, body {
     text-indent: 100%;
 }
 
+.menu__btn_loginRegister:hover,
+.download__content button:hover,
+.services__classic button:hover,
+.services__premium button:hover,
+.services__exclusive button:hover,
+.contact__form input[type="submit"]:hover {
+    background-color: white;
+    color: #694CB7;
+    border: 2px solid #333333;
+}
+
 .header {
     width: 100%;
     padding: 20px 2%;
@@ -69,12 +80,6 @@ header .menu ul li {
     text-decoration: none;
     border-radius: 12px;
     transition: all ease 0.5s;
-}
-
-.menu__btn_loginRegister:hover, .download__content button:hover {
-    background-color: white;
-    color: #694CB7;
-    border: 2px solid #333333;
 }
 
 .about, .qualities, .download {
@@ -139,5 +144,150 @@ header .menu ul li {
 
 .spendGame, .boyGaming {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
+}
+
+.services {
+    width: 100%;
+    padding: 20px 6%;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.services .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services__classic, .services__premium, .services__exclusive {
+    width: 100%;
+    max-width: 320px;
+    padding: 20px 2%;
+    background-color: white;
+    color: #333333;
+    border-radius: 12px;
+    text-align: center;
+    min-height: 370px;
+    position: relative;
+}
+
+.services__exclusive {
+    min-height: 420px;
+}
+
+.services__classic h3, .services__premium h3, .services__exclusive h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #694CB7;
+}
+
+.services__classic h4, .services__premium h4, .services__exclusive h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 16px;
+}
+
+.services__classic ul, .services__premium ul, .services__exclusive ul {
+    list-style: none;
+    text-align: left;
+}
+
+.services__classic ul li:first-child, .services__premium ul li:first-child, .services__exclusive ul li:first-child {
+    margin-top: 32px;
+}
+
+.services__classic ul li, .services__premium ul li, .services__exclusive ul li {
+    margin-top: 16px;
+}
+
+.services__classic svg, .services__premium svg, .services__exclusive svg {
+    color: #007E1B;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0 16px -4px 0;
+}
+
+.services__classic p, .services__premium p, .services__exclusive p {
+    display: inline-block;
+    margin: 0 -4px -4px 0;
+    font-size: 1.3rem;
+}
+
+.services__classic button, .services__premium button, .services__exclusive button {
+    width: 100%;
+    max-width: 150px;
+    height: 52px;
+    color: white;
+    background-color: #0067F1;
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    margin-bottom: 32px;
+}
+
+.contact {
+    width: 100%;
+    padding: 20px 2%;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    color: #694CB7;
+    margin-bottom: 24px;
+}
+
+.contact__form {
+    width: 100%;
+    max-width: 486px;
+    display: inline-block;
+}
+
+.contact__form label p {
+    font-size: 1.3rem;
+    margin: 16px 0 16px 6px;
+    text-align: left;
+}
+
+.contact__form input[type="text"], .contact__form textarea {
+    width: 100%;
+    height: 48px;
+    background-color: #DDDDDD;
+    border: 0;
+    border-radius: 12px;
+    padding-left: 16px;
+}
+
+.contact__form textarea {
+    height: 123px;
+}
+
+.contact__form input[type="submit"] {
+    width: 100%;
+    max-width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #0067F1;
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 32px;
+    transition: all ease 0.5s;
 }
