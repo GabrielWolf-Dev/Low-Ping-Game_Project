@@ -12,7 +12,7 @@
 <body>
     <!-- 1280px vou usar media queries -->
     
-    <a class="shortcutToMain" href="#main">skip to the main</a>
+    <a class="shortcutToMain" href="#Main">skip to the main</a>
 
     <div class="bgBlack"></div><!--bgBlack-->
 
@@ -30,10 +30,10 @@
 
         <nav class="header__menuDesktop">
             <ul>
-                <li><a class="menuDesktop__items" href="#">Home</a></li>
-                <li><a class="menuDesktop__items" href="#">About</a></li>
-                <li><a class="menuDesktop__items" href="#">Services</a></li>
-                <li><a class="menuDesktop__items" href="#">Contact</a></li>
+                <li><a class="menuDesktop__items" href="index.html">Home</a></li>
+                <li><a class="menuDesktop__items" href="#About">About</a></li>
+                <li><a class="menuDesktop__items" href="#Services">Services</a></li>
+                <li><a class="menuDesktop__items" href="#Contact">Contact</a></li>
                 <li><a class="menuDesktop__items" href="#">Suport</a></li>
                 <li><a href="#" class="menuDesktop__btnLogReg">Login</a></li>
                 <li><a href="#" class="menuDesktop__btnLogReg">Register</a></li>
@@ -46,19 +46,19 @@
             <ul class="menuMobile__menu">
                 <button class="menu__btnClose"><i class="fas fa-times"></i></button>
 
-                <li class="menu__items"><a href="#">Home</a></li>
-                <li class="menu__items"><a href="#">About</a></li>
-                <li class="menu__items"><a href="#">Services</a></li>
-                <li class="menu__items"><a href="#">Contact</a></li>
+                <li class="menu__items"><a href="index.html">Home</a></li>
+                <li class="menu__items"><a href="#About">About</a></li>
+                <li class="menu__items"><a href="#Services">Services</a></li>
+                <li class="menu__items"><a href="#Contact">Contact</a></li>
                 <li class="menu__items"><a href="#">Suport</a></li>
             </ul>
         </nav><!--header__menuMobile-->
 
     </header><!--header-->
 
-    <main id="main">
+    <main id="Main">
 
-        <section class="about">
+        <section class="about" id="About">
             <div class="about__content">
                 <h1>Low Ping Game</h1>
                 <p>
@@ -76,6 +76,7 @@
                 </p>
             </div><!--content-->
             <img class="spendGame" src="./assets/img/hardPlayGame.jpg" alt="Two people spending time playing Games with a high connection" /><!--boyGaming-->
+            <img src="./assets/img/boyGamingMobile.png" alt="A boy playng video Game. Illustration" class="qualities__boyGamingMobile" />
         </section><!--qualities-->
 
         <section class="download">
@@ -89,7 +90,7 @@
             </div><!--content-->
         </section><!--download-->
 
-        <section class="services">
+        <section class="services" id="Services">
 
             <h2>Services</h2>
 
@@ -173,7 +174,7 @@
 
         </section><!--services-->
 
-        <section class="contact">
+        <section class="contact" id="Contact">
             <h2>Contact</h2>
 
             <div class="container">

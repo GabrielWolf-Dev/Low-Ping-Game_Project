@@ -181,6 +181,10 @@ header .header__menuDesktop ul li {
     max-width: 900px;
 }
 
+.qualities__boyGamingMobile {
+    display: none;
+}
+
 .services {
     width: 100%;
     padding: 20px 6%;
@@ -306,7 +310,7 @@ header .header__menuDesktop ul li {
     background-color: #DDDDDD;
     border: 0;
     border-radius: 12px;
-    padding-left: 16px;
+    padding: 16px;
 }
 
 .contact__form textarea {
@@ -431,7 +435,8 @@ header .header__menuDesktop ul li {
 .menuMobile__menu {
     list-style: none;
     background-color: white;
-    width: 40%;
+    width: 100%;
+    max-width: 320px;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -443,6 +448,7 @@ header .header__menuDesktop ul li {
     -ms-transform: translateX(110%);
     -o-transform: translateX(110%);
     transition: transform ease 0.5s;
+    z-index: 1;
 }
 
 .menu__items {
@@ -484,6 +490,112 @@ header .header__menuDesktop ul li {
 .main--active {
     background-color: rgba(0, 0, 0, 0.5);
     transition: all ease 0.5s;
+}
+
+.about, .download {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+.qualities {
+    flex-direction: column;
+    padding: 20px 4%;
+}
+
+.about__content {
+    width: 100%;
+    max-width: 360px;
+    margin-top: 24px;
+}
+
+.download__content {
+    width: auto;
+}
+
+.about__content h1 {
+    text-align: center;
+}
+
+.about__svgGame {
+    margin-top: 32px;
+} 
+
+.spendGame, .boyGaming {
+    display: none;
+}
+
+.qualities__boyGamingMobile {
+    display: block;
+    margin-top: 32px;
+}
+
+.qualities__content {
+    width: auto;
+    max-width: 380px;
+}
+
+.about__content h1, .qualities__content h2, .download__content h2, .services h2 {
+    font-size: 1.5rem;
+}
+
+.about__content p, .qualities__content p, .download__content p {
+    font-size: 1rem;
+}
+
+.qualities__content h2 {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.services .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.services__exclusive {
+    margin: 32px 0;
+}
+
+.services__classic, .services__premium, .services__exclusive {
+    text-align: center;
+    min-height: 340px;
+    z-index: 0;
+}
+
+.services__classic h3, .services__exclusive h3, .services__premium h3 {
+    font-size: 1.3rem;
+}
+
+.services__classic h4, .services__exclusive h4, .services__premium h4 {
+    font-size: 1.2rem;
+}
+
+.services__classic p,
+.services__exclusive p,
+.services__premium p,
+.services__classic svg,
+.services__exclusive svg,
+.services__premium svg {
+    font-size: 1rem;
+}
+
+.services__classic ul, .services__premium ul, .services__exclusive ul {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    margin: 0 -4px -4px 0;
+}
+
+.footer .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer__contact, .footer__credits {
+    text-align: center;
+    margin: 32px 0;
 }
 
 }

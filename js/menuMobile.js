@@ -13,3 +13,8 @@ btnCloseMenu.addEventListener('click', () => {
     menuNav.classList.remove('menuMobile__menu--active');
     bgBlack.classList.remove('bgBlack--active');
 });
+
+bgBlack.addEventListener('click', () => {
+    menuNav.classList.remove('menuMobile__menu--active');
+    bgBlack.classList.remove('bgBlack--active');
+});
