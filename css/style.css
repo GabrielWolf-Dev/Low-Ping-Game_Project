@@ -465,18 +465,18 @@ header .header__menuDesktop ul li {
     z-index: 1;
 }
 
-.menu__items {
+.menuMobile__items {
     width: 100%;
     background-color: #DDDDDD;
     padding: 20px 6%;
     border-bottom: 2px solid #333333;
 }
 
-.menu__items:last-child {
+.menuMobile__items:last-child {
     border-bottom: none;
 }
 
-.menu__items a {
+.menuMobile__items a {
     color: #333333;
     font-size: 1.5rem;
     text-decoration: none;

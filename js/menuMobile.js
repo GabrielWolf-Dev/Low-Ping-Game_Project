@@ -6,6 +6,14 @@ const menuNav = document.querySelector('.menuMobile__menu');
 const homeLink = document.querySelector('.menu__items--home');
 const bgBlack = document.querySelector('.bgBlack');
 
+const linksMenu = {
+    about: document.getElementById('about'),
+    services: document.getElementById('services'),
+    contact: document.getElementById('contact')
+};
+
+const { about, services, contact } = linksMenu;
+
 
 menuNav.classList.add('disable');
 
@@ -19,6 +27,7 @@ btnMenu.addEventListener('click', () => {
         btnCloseMenu.focus();
 
         linksMobile[5].addEventListener('focusout', focusOnlyMenu);
+        linkActive(about, services, contact);
     }, 100);
 });
 
@@ -47,6 +56,14 @@ menuNav.addEventListener('keyup', (event) => {
 bgBlack.addEventListener('click', () => {
     closeMenu();
 });
+
+function linkActive(...links) {
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+       });
+    });
+ }
 
 
 function focusOnlyMenu() {
