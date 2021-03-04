@@ -34,6 +34,7 @@ html, body {
     background-color: rgba(0, 0, 0, 0.5);
     transition: all ease 0.5s;
     opacity: 0;
+    z-index: 1;
 }
 
 .bgBlack--active {
@@ -215,6 +216,7 @@ header .header__menuDesktop ul li {
     text-align: center;
     min-height: 370px;
     position: relative;
+    z-index: 0;
 }
 
 .services__exclusive {
@@ -225,12 +227,24 @@ header .header__menuDesktop ul li {
     font-size: 1.5rem;
     font-weight: 500;
     color: #694CB7;
+    margin-bottom: 16px;
 }
 
-.services__classic h4, .services__premium h4, .services__exclusive h4 {
+.hideVisually{
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.services__classic span, .services__premium span, .services__exclusive span {
     font-size: 1.3rem;
     font-weight: 800;
-    margin-top: 16px;
+    display: block;
 }
 
 .services__classic ul, .services__premium ul, .services__exclusive ul {
@@ -568,7 +582,7 @@ header .header__menuDesktop ul li {
     font-size: 1.3rem;
 }
 
-.services__classic h4, .services__exclusive h4, .services__premium h4 {
+.services__classic span, .services__exclusive span, .services__premium span {
     font-size: 1.2rem;
 }
 
@@ -596,6 +610,10 @@ header .header__menuDesktop ul li {
 .footer__contact, .footer__credits {
     text-align: center;
     margin: 32px 0;
+}
+
+.disable {
+    display: none;
 }
 
 }

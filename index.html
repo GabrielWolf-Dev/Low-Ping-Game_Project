@@ -10,7 +10,6 @@
     <title>No Ping Game</title>
 </head>
 <body>
-    <!-- 1280px vou usar media queries -->
     
     <a class="shortcutToMain" href="#Main">skip to the main</a>
 
@@ -31,9 +30,9 @@
         <nav class="header__menuDesktop">
             <ul>
                 <li><a class="menuDesktop__items" href="index.html">Home</a></li>
-                <li><a class="menuDesktop__items" href="#About">About</a></li>
-                <li><a class="menuDesktop__items" href="#Services">Services</a></li>
-                <li><a class="menuDesktop__items" href="#Contact">Contact</a></li>
+                <li><a class="menuDesktop__items" id="about" href="#About">About</a></li>
+                <li><a class="menuDesktop__items" id="services" href="#Services">Services</a></li>
+                <li><a class="menuDesktop__items" id="contact" href="#Contact">Contact</a></li>
                 <li><a class="menuDesktop__items" href="#">Suport</a></li>
                 <li><a href="#" class="menuDesktop__btnLogReg">Login</a></li>
                 <li><a href="#" class="menuDesktop__btnLogReg">Register</a></li>
@@ -41,16 +40,16 @@
         </nav><!--header__menuDesktop-->
 
         <nav class="header__menuMobile">
-            <button class="menuMobile__btnBar"><i class="fas fa-bars"></i></button>
+            <button class="menuMobile__btnBar" aria-label="Abrir Menu"><i class="fas fa-bars"></i></button>
 
             <ul class="menuMobile__menu">
-                <button class="menu__btnClose"><i class="fas fa-times"></i></button>
+                <button data-linksMobile class="menu__btnClose" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
 
-                <li class="menu__items"><a href="index.html">Home</a></li>
-                <li class="menu__items"><a href="#About">About</a></li>
-                <li class="menu__items"><a href="#Services">Services</a></li>
-                <li class="menu__items"><a href="#Contact">Contact</a></li>
-                <li class="menu__items"><a href="#">Suport</a></li>
+                <li class="menu__items"><a data-linksMobile href="index.html">Home</a></li>
+                <li class="menu__items"><a data-linksMobile href="#About">About</a></li>
+                <li class="menu__items"><a data-linksMobile href="#Services">Services</a></li>
+                <li class="menu__items"><a data-linksMobile href="#Contact">Contact</a></li>
+                <li class="menu__items"><a data-linksMobile href="#">Suport</a></li>
             </ul>
         </nav><!--header__menuMobile-->
 
@@ -97,8 +96,8 @@
             <div class="container">
 
                 <div class="services__classic">
-                    <h3>Classic</h3>
-                    <h4>R$ 19, 00</h4>
+                    <h3><span class="hideVisually">Plano</span> Classic</h3>
+                    <span>R$ 19, 00</span>
     
                     <ul>
                         <li>
@@ -115,12 +114,12 @@
                         </li>
                     </ul>
     
-                    <button>Sign</button>
+                    <button>Sign <span class="hideVisually">plan Classic</span></button>
                 </div><!--services__classic-->
     
                 <div class="services__exclusive">
-                    <h3>Exclusive</h3>
-                    <h4>R$ 149, 00</h4>
+                    <h3><span class="hideVisually">Plano</span> Exclusive</h3>
+                    <span>R$ 149, 00</span>
     
                     <ul>
                         <li>
@@ -141,12 +140,12 @@
                         </li>
                     </ul>
     
-                    <button>Sign</button>
+                    <button>Sign <span class="hideVisually">plan Exclusive</span></button>
                 </div><!--services__exclusive-->
     
                 <div class="services__premium">
-                    <h3>Premium</h3>
-                    <h4>R$ 79, 00</h4>
+                    <h3><span class="hideVisually">Plano</span> Premium</h3>
+                    <span>R$ 79, 00</span>
     
                     <ul>
                         <li>
@@ -167,7 +166,7 @@
                         </li>
                     </ul>
     
-                    <button>Sign</button>
+                    <button>Sign <span class="hideVisually">plan Premium</span></button>
                 </div><!--services__premium-->
 
             </div><!--container-->
