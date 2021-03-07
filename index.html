@@ -179,27 +179,41 @@
             <div class="container">
 
                 <form class="contact__form">
-                    <label for="name">
-                        <p>Full Name*</p>
-                    </label>
-                    <input required type="text" id="name" placeholder="Please insert your Full Name" />
-    
-                    <label for="phone">
-                        <p>Your Phone</p>
-                    </label>
-                    <input type="text" id="phone" placeholder="Please insert your Phone" />
-    
-                    <label for="email">
-                        <p>E-mail*</p>
-                    </label>
-                    <input required type="text" id="email" placeholder="Please insert your Email" />
-    
-                    <label for="message">
-                        <p>Message*</p>
-                    </label>
-                    <textarea required type="text" id="message" placeholder="Please insert your Message"></textarea>
-    
-                    <input type="submit" value="Send" />
+                    <fieldset>
+                        <legend class="form__subtitle">
+                            Do you have any questions or feedback?
+                            Fill out this form below:
+                        </legend><!--form__subtitle-->
+
+                        <label for="name">
+                            <p>Full Name*</p>
+                        </label>
+                        <input required type="text" id="name" placeholder="Please insert your Full Name" />
+        
+                        <label for="phone">
+                            <p>Your Phone</p>
+                        </label>
+                        <input type="text" id="phone" placeholder="Please insert your Phone" />
+        
+                        <label for="email">
+                            <p>E-mail*</p>
+                        </label>
+                        <input required type="email" id="email" placeholder="Please insert your Email" />
+        
+                        <label for="message">
+                            <p>Message*</p>
+                        </label>
+                        <textarea required type="text" id="message" placeholder="Please insert your Message"></textarea>
+        
+                        <div class="checkEmail">
+                            <input id="emailNotification" type="checkbox">
+                            <label for="emailNotification">
+                                <p>Receive email notifications</p>
+                            </label>
+                        </div><!--checkEmail-->
+
+                        <input type="submit" value="Send" id="sendForm" />
+                    </fieldset>
                 </form><!--contact__form-->
 
             </div><!--container-->
@@ -237,9 +251,10 @@
 
         </div><!--container-->
     </footer><!--footer-->
-
+    
     <script src="./js/all.js"></script>
     <script src="./js/menuMobile.js"></script>
     <script src="./js/smoothScroll.js"></script>
+    <script src="./js/formValidation.js"></script>
 </body>
 </html>
