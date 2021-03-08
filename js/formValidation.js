@@ -14,6 +14,7 @@ document.querySelector('#sendForm').addEventListener('click', (event) => {
     emailValidation(email);
 });
 
+
 function nameValidation(name){
     const regExpName = /^([A-Z]{1}[a-z]+\s?){2,}$/;
 
@@ -39,7 +40,7 @@ function phoneValidation(phone) {
 }
 
 function emailValidation(email){
-    const regExpEmail = /^(\w+)@(gmail|hotmail|outlook)(\.com)$/;
+    const regExpEmail = /^(\w+)@(gmail|hotmail|outlook|uol)(\.com|\.com\.br|\.net|\.org)$/;
 
     if(!regExpEmail.test(email) === true){
         inputRequire[2].setCustomValidity('Insira o seu email corretamente. Aceitamos somente : hotmail, gmail e outlook');
@@ -61,3 +62,5 @@ function showCheckIcon(index) {
     inputForm[index].classList.remove('boxInput__input--error');
     inputForm[index].classList.add('boxInput__input--check');
 }
+
+export default emailValidation;

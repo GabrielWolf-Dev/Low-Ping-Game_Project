@@ -379,6 +379,19 @@ header .header__menuDesktop ul li {
     position: relative;
 }
 
+.form__emailSuggestion {
+    width: 100%;
+    font-size: 1rem;
+    color: #BB1118;
+    padding-left: 16px;
+    display: none;
+    text-align: left;
+}
+
+.form__emailSuggestion--active {
+    display: inline-block;
+}
+
 .contact__form input[type="checkbox"] {
     width: 100%;
     max-width: 32px;
