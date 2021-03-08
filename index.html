@@ -188,22 +188,31 @@
                         <label for="name">
                             <p>Full Name*</p>
                         </label>
-                        <input required type="text" id="name" placeholder="Please insert your Full Name" />
+                        <div class="form__boxInput">
+                            <input class="boxInput__input" required type="text" id="name" placeholder="Please insert your Full Name" />
+                            <div class="form__iconValidation"></div><!--form__iconValidation-->
+                        </div><!--form__boxInput-->
         
                         <label for="phone">
-                            <p>Your Phone</p>
+                            <p>Your Phone*</p>
                         </label>
-                        <input type="text" id="phone" placeholder="Please insert your Phone" />
+                        <div class="form__boxInput">
+                            <input required class="boxInput__input" type="text" id="phone" placeholder="Please insert your Phone" />
+                            <div class="form__iconValidation"></div><!--form__iconValidation-->
+                        </div><!--form__boxInput-->
         
                         <label for="email">
                             <p>E-mail*</p>
                         </label>
-                        <input required type="email" id="email" placeholder="Please insert your Email" />
+                        <div class="form__boxInput">
+                            <input class="boxInput__input" required type="email" id="email" placeholder="Please insert your Email" />
+                            <div class="form__iconValidation"></div><!--form__iconValidation-->
+                        </div><!--form__boxInput-->
         
                         <label for="message">
                             <p>Message*</p>
                         </label>
-                        <textarea required type="text" id="message" placeholder="Please insert your Message"></textarea>
+                        <textarea class="boxInput__textarea" required type="text" id="message" placeholder="Please insert your Message"></textarea>
         
                         <div class="checkEmail">
                             <input id="emailNotification" type="checkbox">
