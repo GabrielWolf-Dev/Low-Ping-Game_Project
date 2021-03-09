@@ -1,3 +1,4 @@
+/*-- Reset --*/
 *{
     margin: 0;
     padding: 0;
@@ -10,15 +11,7 @@ html, body {
     color: #333333;
 }
 
-fieldset {
-    border: 0;
-}
-
-.container {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-}
+/*-- Hidden Link --*/
 
 .shortcutToMain {
     overflow: hidden;
@@ -30,6 +23,8 @@ fieldset {
     white-space: nowrap;
     text-indent: 100%;
 }
+
+/*-- Background Menu Mobile --*/
 
 .bgBlack {
     width: 0;
@@ -46,6 +41,18 @@ fieldset {
     width: 100%;
 }
 
+/*-- Default Config --*/
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 0;
+}
+
 .menuDesktop__btnLogReg:hover,
 .download__content button:hover,
 .services__classic button:hover,
@@ -56,6 +63,8 @@ fieldset {
     color: #694CB7;
     border: 2px solid #333333;
 }
+
+/*-- Style of the Site --*/
 
 .btnLoginRegister {
     display: none;
@@ -699,4 +708,33 @@ header .header__menuDesktop ul li {
         display: none;
     }
 
+}
+
+/*-- Animation Scroll --*/
+
+[data-scrollAnimate] {
+    opacity: 0;
+    transition: ease all 0.3s;
+}
+
+[data-scrollAnimate="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-scrollAnimate="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-scrollAnimate="scale"] {
+    transform: scale(0);
+}
+
+[data-scrollAnimate].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transform: scale(1);
+    -o-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }

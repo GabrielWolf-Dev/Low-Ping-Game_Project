@@ -2,17 +2,19 @@ const inputRequire = document.querySelectorAll('[required]');
 const inputForm = document.querySelectorAll('.boxInput__input');
 const iconValidation = document.querySelectorAll('.form__iconValidation');
 
-document.querySelector('#sendForm').addEventListener('click', (event) => {
-    event.stopPropagation();
-
-    const name = document.querySelector('#name').value;
-    const phone = document.querySelector('#phone').value;
-    const email = document.querySelector('#email').value;
-
-    nameValidation(name);
-    phoneValidation(phone);
-    emailValidation(email);
-});
+const inputValidate = () => {
+    document.querySelector('#sendForm').addEventListener('click', (event) => {
+        event.stopPropagation();
+    
+        const name = document.querySelector('#name').value;
+        const phone = document.querySelector('#phone').value;
+        const email = document.querySelector('#email').value;
+    
+        nameValidation(name);
+        phoneValidation(phone);
+        emailValidation(email);
+    });
+};
 
 
 function nameValidation(name){
@@ -63,4 +65,4 @@ function showCheckIcon(index) {
     inputForm[index].classList.add('boxInput__input--check');
 }
 
-export default emailValidation;
+export { emailValidation, inputValidate };

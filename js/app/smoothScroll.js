@@ -1,8 +1,10 @@
 const menuLinks = document.querySelectorAll('header a[href^="#"]');
 
-menuLinks.forEach(links => {
-    links.addEventListener('click', scrollOnClick);
-});
+const linksListeners = () => {
+    menuLinks.forEach(links => {
+      links.addEventListener('click', scrollOnClick);
+  })
+};
 
 function getScrollTopByHref(element){
     const id = element.getAttribute('href');
@@ -50,3 +52,5 @@ function smoothScrollTo(endX, endY, duration) {
       window.scroll(newX, newY);
     }, 1000 / 60); // 60 fps
   };
+
+  export default linksListeners;

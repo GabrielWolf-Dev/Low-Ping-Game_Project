@@ -18,18 +18,20 @@ const { about, services, contact } = linksMenu;
 menuNav.classList.add('disable');
 
 
-btnMenu.addEventListener('click', () => {
-    menuNav.classList.remove('disable');
-
-    setTimeout(() => {
-        menuNav.classList.add('menuMobile__menu--active');
-        bgBlack.classList.add('bgBlack--active');
-        btnCloseMenu.focus();
-
-        linksMobile[5].addEventListener('focusout', focusOnlyMenu);
-        linkActive(about, services, contact);
-    }, 100);
-});
+const showMenu = () => {
+    btnMenu.addEventListener('click', () => {
+        menuNav.classList.remove('disable');
+    
+        setTimeout(() => {
+            menuNav.classList.add('menuMobile__menu--active');
+            bgBlack.classList.add('bgBlack--active');
+            btnCloseMenu.focus();
+    
+            linksMobile[5].addEventListener('focusout', focusOnlyMenu);
+            linkActive(about, services, contact);
+        }, 100);
+    });
+};
 
 function closeMenu() {
     menuNav.classList.remove('menuMobile__menu--active');
@@ -43,9 +45,11 @@ function closeMenu() {
     }, 500);
 } 
 
-btnCloseMenu.addEventListener('click', () => {
-    closeMenu();  
-});
+const hideMenu = () => {
+    btnCloseMenu.addEventListener('click', () => {
+        closeMenu();  
+    });
+};
 
 menuNav.addEventListener('keyup', (event) => {
     if(event.keyCode === 27){
@@ -73,3 +77,5 @@ function focusOnlyMenu() {
 function removeEventsListeners() {
     linksMobile[5].removeEventListener('focusout', focusOnlyMenu, false);
 }
+
+export {showMenu, hideMenu};
