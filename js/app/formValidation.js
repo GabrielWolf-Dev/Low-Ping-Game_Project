@@ -21,7 +21,7 @@ function nameValidation(name){
     const regExpName = /^([A-Z]{1}[a-z]+\s?){2,}$/;
 
     if(!regExpName.test(name) === true){
-        inputRequire[0].setCustomValidity('Ops, campo inválido! Insira o seu nome completo :)');
+        inputRequire[0].setCustomValidity('Field not valid! Please, insert your full name.');
         showErrorIcon(0);
     }else {
         showCheckIcon(0);
@@ -33,7 +33,7 @@ function phoneValidation(phone) {
     const regExpPhone = /^(\+\d{2})\s?(\(\d{2}\))\s?(\d{5}-\d{4})$/;
 
     if(!regExpPhone.test(phone) === true){
-        inputRequire[1].setCustomValidity('Insira o seu telefone correto. Ex: +44 (12) 76323-3321');
+        inputRequire[1].setCustomValidity('Please insert your correctly phone number. Example: +44 (12) 76323-3321');
         showErrorIcon(1);
     }else {
         showCheckIcon(1);
@@ -45,7 +45,7 @@ function emailValidation(email){
     const regExpEmail = /^(\w+)@(gmail|hotmail|outlook|uol)(\.com|\.com\.br|\.net|\.org)$/;
 
     if(!regExpEmail.test(email) === true){
-        inputRequire[2].setCustomValidity('Insira o seu email corretamente. Aceitamos somente : hotmail, gmail e outlook');
+        inputRequire[2].setCustomValidity('Please, insert your correctly email. Only accept: hotmail, gmail, outlook or uol');
         showErrorIcon(2);
     }else {
         showCheckIcon(2);
