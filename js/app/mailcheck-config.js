@@ -19,7 +19,7 @@ const emailCheck = () => {
             secondLevelDomains: secondLevelDomains,  
             suggested: function(suggestion) {
                 suggestionField.classList.add('form__emailSuggestion--active');
-                suggestionField.textContent= `Você quis dizer: ${suggestion.full}?`;
+                suggestionField.textContent= `Did you mean: ${suggestion.full}?`;
                 suggestionField.setAttribute('tabindex', '0');
                 suggestionField.setAttribute('role', 'alert');
                 emailValidation(emailInput.value);
