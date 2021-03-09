@@ -19,6 +19,8 @@ emailInput.addEventListener('blur', function() {
         suggested: function(suggestion) {
             suggestionField.classList.add('form__emailSuggestion--active');
             suggestionField.textContent= `Você quis dizer: ${suggestion.full}?`;
+            suggestionField.setAttribute('tabindex', '0');
+            suggestionField.setAttribute('role', 'alert');
             emailValidation(emailInput.value);
         }
       });
