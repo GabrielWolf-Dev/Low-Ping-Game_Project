@@ -1,5 +1,5 @@
-# [No-Ping-Game_Project](https://gabrielwolf-dev.github.io/No-Ping-Game_Project/)
-## A fictitious project about the software "No Ping Game" for apply some learned concepts.
+# [Low-Ping-Game_Project](https://gabrielwolf-dev.github.io/No-Ping-Game_Project/)
+## A fictitious project about the software "Low Ping Game" for apply some learned concepts.
 
 ### Images:
 ![Home](https://github.com/GabrielWolf-Dev/No-Ping-Game_Project/blob/main/assets/imgReadme/home.png)
