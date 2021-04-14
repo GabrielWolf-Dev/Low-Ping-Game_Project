@@ -1,4 +1,4 @@
-# [Low-Ping-Game_Project](https://gabrielwolf-dev.github.io/No-Ping-Game_Project/)
+# [Low-Ping-Game_Project](https://gabrielwolf-dev.github.io/Low-Ping-Game_Project/)
 ## A fictitious project about the software "Low Ping Game" for apply some learned concepts.
 
 ### Images:
