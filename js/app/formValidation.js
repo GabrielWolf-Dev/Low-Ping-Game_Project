@@ -1,6 +1,5 @@
 const inputRequire = document.querySelectorAll('[required]');
 const inputForm = document.querySelectorAll('.boxInput__input');
-const iconValidation = document.querySelectorAll('.form__iconValidation');
 
 const inputValidate = () => {
     document.querySelector('#sendForm').addEventListener('click', (event) => {
@@ -54,13 +53,11 @@ function emailValidation(email){
 }
 
 function showErrorIcon(index) {
-    iconValidation[index].innerHTML = `<i style="color: #BB1118;" class="fas fa-times"></i>`;
     inputForm[index].classList.add('boxInput__input--error');
     inputForm[index].classList.remove('boxInput__input--check');
 }
 
 function showCheckIcon(index) {
-    iconValidation[index].innerHTML = `<i style="color: #007E1B;" class="fas fa-check-circle"></i>`;
     inputForm[index].classList.remove('boxInput__input--error');
     inputForm[index].classList.add('boxInput__input--check');
 }
